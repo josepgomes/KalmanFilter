@@ -22,12 +22,15 @@ There are no dependencies, pure math! Just add KalmanFilter.h to your project an
 Using the library is easy.
 
 ```c
+//Measurements
 float values[11] = {79,76,77,81,95,85,86,95,80,83,86};
 
+//KalmanFilter(Process noise, Measurement noise, State vector, Control vector, Measurement vector);
 KalmanFilter kalmanFilter = KalmanFilter(0.01, 3, 1, 0, 1);
 
 for (int i = 0; i < 11; i++)
 {
+  //kalmanFilter.filter(Measurement, Control);
   printf("%f ", kalmanFilter.filter(values[i], 0));
 }
 
