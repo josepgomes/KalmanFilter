@@ -9,10 +9,6 @@ KalmanFilter is a simple and small library that can be easily called in your c++
 ### After Kalman Filter
 ![Data Without Kalman Filter](/resources/b1after.png?raw=true "Data Without Kalman Filter")
 
-## Background
-
-Soon.
-
 ## Installation
 
 There are no dependencies, pure math! Just add KalmanFilter.h to your project and don't forget to add #include "KalmanFilter.h".
